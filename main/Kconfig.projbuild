@@ -1,0 +1,20 @@
+menu "Wifi Configuration"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "esp32"
+        help
+            SSID of wifi access point.
+
+    config WIFI_PASSWORD
+        string "WiFi Password"
+        default "password"
+        help
+            WiFi password to use.
+
+    config MAX_STA_CONN
+        int "Maximal STA connections"
+        default 4
+        help
+            Max number of the STA connects to AP.
+endmenu
